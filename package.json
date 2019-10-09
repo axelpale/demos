@@ -1,0 +1,35 @@
+{
+  "name": "demo.akselipalen.com",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Demo",
+  "main": "app.js",
+  "scripts": {
+    "build": "webpack",
+    "deploy": "rsync --recursive --include-from=\".deployinclude\" --exclude=\"*\" ./ xeli@xeli.webfactional.com:~/webapps/demos/",
+    "start": "nodemon --watch src --exec 'npm run build'",
+    "lint": "standard 'src/**/*.js' && echo OK",
+    "test": "npm run lint"
+  },
+  "author": {
+    "name": "Akseli Palen",
+    "email": "akseli.palen@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/axelpale/crude-oil-consumption.git"
+  },
+  "license": "GPL-3.0-or-later",
+  "devDependencies": {
+    "css-loader": "^3.2.0",
+    "ejs-loader": "^0.3.3",
+    "nodemon": "*",
+    "standard": "*",
+    "style-loader": "^1.0.0",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.7"
+  },
+  "dependencies": {
+    "sprinkler": "^1.2.1"
+  }
+}
