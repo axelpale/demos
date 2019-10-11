@@ -5,45 +5,57 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
 
-  <title>World Crude Oil Consumption</title>
+  <title>Demos by Akseli Palén</title>
   <style>
-    html, body { margin: 0; padding: 0; }
+    html, body { margin: 0; padding: 0; height: 100%; }
     body { background: white; font-family: sans-serif; }
-    h1 { }
+    h1 { margin: 0; margin-bottom: 1rem; }
     a:link { color: gray; }
     a:visited { color: gray; }
     a:hover { color: lightgray; }
-    canvas { display: block; }
+    canvas {
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 10;
+      opacity: 0.2;
+    }
+    .text-container {
+      z-index: 20;
+      position: relative;
+      padding: 1rem;
+    }
   </style>
 </head>
 <body>
-<canvas id="canvas"></canvas>
-
-<h1>Demos by Akseli Pal&eacute;n</h1>
-<ul>
-<li><a href="crude-oil-consumption">crude-oil-consumption</a></li>
-<li><a href="graphed">graphed</a></li>
-<li><a href="lately">lately</a></li>
-<li><a href="locator2">locator2</a></li>
-<li><a href="loclin">loclin</a></li>
-<li><a href="mojifall">mojifall</a></li>
-<li><a href="mojifall-openmoji-emojitracker">mojifall-openmoji-emojitracker</a></li>
-<li><a href="mojifall-openmoji-emojitracker-visualization">mojifall-openmoji-emojitracker-visualization</a></li>
-<li><a href="objectron">objectron</a></li>
-<li><a href="openmoji-emojitracker-mojifall">openmoji-emojitracker-mojifall</a></li>
-<li><a href="osm2gmaps">osm2gmaps</a></li>
-<li><a href="pointron">pointron</a></li>
-<li><a href="semantictext">semantictext</a></li>
-<li><a href="squar">squar</a></li>
-<li><a href="taataa">taataa</a></li>
-<li><a href="territory">territory</a></li>
-<li><a href="tesselation">tesselation</a></li>
-<li><a href="tileflip">tileflip</a></li>
-<li><a href="touchtracker">touchtracker</a></li>
-<li><a href="tracked">tracked</a></li>
-</ul>
-
-<canvas id="canvas"></canvas>
-<script src="dist/bundle.js"></script>
+  <canvas id="canvas"></canvas>
+  <div class="text-container">
+    <h1>Demos by Akseli Pal&eacute;n</h1>
+    <ul>
+    <li><a href="crude-oil-consumption">crude-oil-consumption</a></li>
+    <li><a href="graphed">graphed</a></li>
+    <li><a href="lately">lately</a></li>
+    <li><a href="lately2">lately2</a></li>
+    <li><a href="locator2">locator2</a></li>
+    <li><a href="loclin">loclin</a></li>
+    <li><a href="mojifall">mojifall</a></li>
+    <li><a href="mojifall-openmoji-emojitracker">mojifall-openmoji-emojitracker</a></li>
+    <li><a href="objectron">objectron</a></li>
+    <li><a href="osm2gmaps">osm2gmaps</a></li>
+    <li><a href="pointron">pointron</a></li>
+    <li><a href="semantictext">semantictext</a></li>
+    <li><a href="squar">squar</a></li>
+    <li><a href="taataa">taataa</a></li>
+    <li><a href="territory">territory</a></li>
+    <li><a href="tesselation">tesselation</a></li>
+    <li><a href="tileflip">tileflip</a></li>
+    <li><a href="touchtracker">touchtracker</a></li>
+    <li><a href="tracked">tracked</a></li>
+    </ul>
+  </div>
+  <script src="dist/bundle.js"></script>
 </body>
 </html>
