@@ -23,39 +23,250 @@
       z-index: 10;
       opacity: 0.2;
     }
-    .text-container {
+    article.text-container {
       z-index: 20;
       position: relative;
       padding: 1rem;
     }
+
+    article.text-container > header {
+      margin-bottom: 1rem;
+    }
+
+    article.app {
+      clear: both;
+      margin-bottom: 1rem;
+    }
+
+    article.app > header img {
+      float: left;
+      margin-right: 1rem;
+      margin-bottom: 1rem;
+    }
+
   </style>
 </head>
 <body>
   <canvas id="canvas"></canvas>
-  <div class="text-container">
-    <h1>Demos by Akseli Pal&eacute;n</h1>
-    <ul>
-    <li><a href="crude-oil-consumption">crude-oil-consumption</a></li>
-    <li><a href="graphed">graphed</a></li>
-    <li><a href="lately">lately</a></li>
-    <li><a href="lately2">lately2</a></li>
-    <li><a href="locator2">locator2</a></li>
-    <li><a href="loclin">loclin</a></li>
-    <li><a href="mojifall">mojifall</a></li>
-    <li><a href="mojifall-openmoji-emojitracker">mojifall-openmoji-emojitracker</a></li>
-    <li><a href="objectron">objectron</a></li>
-    <li><a href="osm2gmaps">osm2gmaps</a></li>
-    <li><a href="pointron">pointron</a></li>
-    <li><a href="semantictext">semantictext</a></li>
-    <li><a href="squar">squar</a></li>
-    <li><a href="taataa">taataa</a></li>
-    <li><a href="territory">territory</a></li>
-    <li><a href="tesselation">tesselation</a></li>
-    <li><a href="tileflip">tileflip</a></li>
-    <li><a href="touchtracker">touchtracker</a></li>
-    <li><a href="tracked">tracked</a></li>
-    </ul>
-  </div>
+  <article class="text-container">
+    <header>
+      <h1 style="margin-bottom: 0">Web Tech Demos</h1>
+      <span>by <a href="http://akselipalen.com">Akseli Palén</a></span>
+    </header>
+
+    <main>
+      <article class="app">
+        <header>
+          <img src="img/preview/crudeoil.png" width="128" height="128">
+          <h2><a href="crude-oil-consumption">Crude Oil Consumption</a></h2>
+        </header>
+        <main>
+          <p>World crude oil consumption visualized as a flow of barrels. 2019.</p>
+        </main>
+      </article>
+
+      <article class="app">
+        <header>
+          <img src="img/preview/graphed.png" width="128" height="128">
+          <h2>Graphed</h2>
+        </header>
+        <main>
+          <p>Visualized graph search algorithms for undirected graphs. Pick a starting point and press start-button.</p>
+          <ul>
+            <li><a href="graphed/0">v0:</a> limited depth-first search in an unweighted graph.</li>
+            <li><a href="graphed/1">v1:</a> limited breadth-first search in a weighted graph.</li>
+            <li><a href="graphed/3">v3:</a> limited breadth-first search in a weighted graph.</li>
+            <li><a href="graphed/4">v4:</a> unlimited breadth-first search in a unweighted graph.</li>
+          </ul>
+        </main>
+      </article>
+
+      <article class="app">
+        <header>
+          <img src="img/preview/lately.png" width="128" height="128">
+          <h2>Lately</h2>
+        </header>
+        <main>
+          <p>A future predictor for a multidimensional binary sequence. 2019.</p>
+          <ul>
+            <li><a href="lately">v0:</a> combine predictions from those moments in history where things resemble the immediate past.</li>
+            <li><a href="lately2">v1:</a> weight dimensions based on their dependence.</li>
+          </ul>
+        </main>
+      </article>
+
+      <article class="app">
+        <header>
+          <img src="img/preview/locator2.png" width="128" height="128">
+          <h2><a href="locator2">Locator v2</a></h2>
+        </header>
+        <main>
+          <p>An early dummy prototype of <a href="https://github.com/axelpale/tresdb">TresDB</a>.</p>
+        </main>
+      </article>
+
+      <article class="app">
+        <header>
+          <img src="img/preview/loclin.png" width="128" height="128">
+          <h2><a href="loclin">Loclin</a></h2>
+        </header>
+        <main>
+          <p>An attempt to create a community around geographical links. A predecessor of Nearoo project.</p>
+        </main>
+      </article>
+
+      <article class="app">
+        <header>
+          <img src="img/preview/mojifall.png" width="128" height="128">
+          <h2><a href="mojifall">Mojifall</a></h2>
+        </header>
+        <main>
+          <p>A display of <a href="https://openmoji.org/">OpenMoji</a> emojis as an image rain. 2019.</p>
+        </main>
+      </article>
+
+      <article class="app">
+        <header>
+          <img src="img/preview/mojifall-openmoji-emojitracker.png" width="128" height="128">
+          <h2><a href="mojifall-openmoji-emojitracker">Mojifall Emojitracker</a></h2>
+        </header>
+        <main>
+          <p>Visualization of real-world emoji usage distribution in Twitter. 2019.</p>
+        </main>
+      </article>
+
+      <article class="app">
+        <header>
+          <img src="img/preview/objectron.png" width="128" height="128">
+          <h2><a href="objectron">Objectron</a></h2>
+        </header>
+        <main>
+          <p>A proof-of-concept probabilistic user interface by using first and second order <a href="https://en.wikipedia.org/wiki/Markov_chain">Markov chains</a>.</p>
+        </main>
+      </article>
+
+      <article class="app">
+        <header>
+          <img src="img/preview/osm2gmaps.png" width="128" height="128">
+          <h2><a href="osm2gmaps">Open Streetmap to Google Maps</a></h2>
+        </header>
+        <main>
+          <p>A try-out how to draw <a href="https://www.openstreetmap.org/">OpenStreetMap</a> path data on Google Maps.</p>
+        </main>
+      </article>
+
+      <article class="app">
+        <header>
+          <img src="img/preview/pointron.png" width="128" height="128">
+          <h2><a href="pointron">Pointron</a></h2>
+        </header>
+        <main>
+          <p>A proof-of-concept of an auto-adapting UI button that adjusts itself towards the point of contact a little by little.</p>
+        </main>
+      </article>
+
+      <article class="app">
+        <header>
+          <img src="img/preview/semantictext.png" width="128" height="128">
+          <h2><a href="semantictext">Semantic Text</a></h2>
+        </header>
+        <main>
+          <p>To fight law text ambiguity, this is a concept of text where every meaning has its own reference link to a full description of the meaning.</p>
+        </main>
+      </article>
+
+      <article class="app">
+        <header>
+          <img src="img/preview/squar.png" width="128" height="128">
+          <h2><a href="squar">Squar</a></h2>
+        </header>
+        <main>
+          <p>An arrangement of square format images retrieved from the <a href="https://www.flickr.com/">Flickr</a> API.</p>
+        </main>
+      </article>
+
+      <article class="app">
+        <header>
+          <img src="img/preview/taataa.png" width="128" height="128">
+          <h2><a href="taataa">Taataa</a></h2>
+        </header>
+        <main>
+          <p>An attempt to build associations between images by letting people to select the image that best matches the currently focused image. The name "Taataa" was later adopted by <a href="https://taataa.art">a world of square images</a>.</p>
+        </main>
+      </article>
+
+      <article class="app">
+        <header>
+          <img src="img/preview/territory.png" width="128" height="128">
+          <h2><a href="territory">Territory</a></h2>
+        </header>
+        <main>
+          <p>A game(?) about player positioning and territory sizes. A sidetrack of an attempt to create dynamic button hitboxes.</p>
+        </main>
+      </article>
+
+      <article class="app">
+        <header>
+          <img src="img/preview/tesselation.png" width="128" height="128">
+          <h2>Tesselation</h2>
+        </header>
+        <main>
+          <p>Tests for algorithms that fill and index two-dimensional spaces by using single integer instead of two.</p>
+          <ul>
+            <li><a href="tesselation/0">v0:</a> like a snake</li>
+            <li><a href="tesselation/1">v1:</a> next layer at corner</li>
+            <li><a href="tesselation/2">v2:</a> next layer at corner</li>
+          </ul>
+        </main>
+      </article>
+
+      <article class="app">
+        <header>
+          <img src="img/preview/tileflip.png" width="128" height="128">
+          <h2>Tileflip</h2>
+        </header>
+        <main>
+          <p>UI prototypes of how to flip a square image over.</p>
+          <ul>
+            <li><a href="tileflip/1">v1:</a> linear</li>
+            <li><a href="tileflip/2">v2:</a> spring</li>
+          </ul>
+        </main>
+      </article>
+
+      <article class="app">
+        <header>
+          <img src="img/preview/touchtracker.png" width="128" height="128">
+          <h2>Touchtracker</h2>
+        </header>
+        <main>
+          <p>Development of realistic inertia and friction when moving square images.</p>
+          <ul>
+            <li><a href="touchtracker/1">v1</a></li>
+            <li><a href="touchtracker/2">v2</a></li>
+            <li><a href="touchtracker/3">v3</a></li>
+            <li><a href="touchtracker/4">v4</a></li>
+            <li><a href="touchtracker/5">v5:</a> three-images</li>
+          </ul>
+        </main>
+      </article>
+
+      <article class="app">
+        <header>
+          <img src="img/preview/tracked.png" width="128" height="128">
+          <h2>Tracked</h2>
+        </header>
+        <main>
+          <p>Algorithm to find the set of cells of a grid which are fully or partially inside the viewport.</p>
+          <ul>
+            <li><a href="tracked/0">v0</a></li>
+            <li><a href="tracked/1">v1</a></li>
+          </ul>
+        </main>
+      </article>
+
+    </main>
+  </article>
   <script src="dist/bundle.js"></script>
 </body>
 </html>
