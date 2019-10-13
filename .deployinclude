@@ -1,5 +1,7 @@
 img/
 img/*.png
+img/preview/
+img/preview/*.png
 dist/
 dist/bundle.js
 index.html
